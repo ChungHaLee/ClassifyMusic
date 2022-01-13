@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.15",
+    "promise-queue": "^2.2.5"
+  }
+}
