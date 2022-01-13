@@ -1,6 +1,36 @@
 {
+  "name": "music-emotion-classifier",
+  "version": "1.0.0",
+  "description": "tool for associating musics with emotions based on their features",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel --no-cache index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:parcel": "parcel build .index.html --public-url ./ --no-source-maps",
+    "build": "npm run clean && npm run build:parcel",
+    "clean": "rm -rf dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathildebuenerd/music-emotion-classifier.git"
+  },
+  "keywords": [
+    "emotion",
+    "music",
+    "classifier"
+  ],
+  "author": "mathilde buenerd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathildebuenerd/music-emotion-classifier/issues"
+  },
+  "devDependencies": {
+    "parcel-plugin-json-url-loader": "^0.1.2",
+    "typescript": "^3.9.10"
+  },
+  "homepage": "https://github.com/mathildebuenerd/music-emotion-classifier#readme",
   "dependencies": {
-    "nodemon": "^2.0.15",
-    "promise-queue": "^2.2.5"
+    "data": "^0.6.1",
+    "parcel-bundler": "^1.12.5"
   }
 }
